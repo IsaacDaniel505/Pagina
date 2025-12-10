@@ -1,0 +1,121 @@
+/* Copia de diseño.css con nombre sin caracteres especiales */
+.barra {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff159;
+    padding: 15px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    z-index: 1000;
+}
+
+.logo {
+    margin: 0;
+}
+
+.barra input {
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.botones-superior {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    background: rgba(255, 251, 0, 0.5);
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.icono:hover {
+    background: rgba(255, 123, 0, 0.8);
+}
+
+.icono.admin {
+    background: rgba(255, 251, 0, 0.5);
+}
+.icono.admin:hover {
+    background: rgba(255, 123, 0, 0.8);   
+}
+.icono.back {
+    background: rgba(255, 251, 0, 0.5);
+}
+.icono.back:hover {
+    background: rgba(255, 123, 0, 0.8);   
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+.contenedor-productos {
+    padding: 120px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+button {
+    padding: 10px 15px;
+    background: #3483fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #27398a;
+}
+
+.admin-container { max-width: 980px; margin: 0 auto; padding: 0 12px; }
+.admin-form-row { display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap; }
+.admin-form-row input[type="text"], .admin-form-row input[type="number"], .admin-form-row textarea, .admin-form-row input[type="file"] { flex:1 1 220px; }
+.tabla { width:100%; border-collapse: collapse; margin-top:12px; }
+.tabla th, .tabla td { padding: 8px 10px; border: 1px solid #ddd; text-align: left; vertical-align: middle; }
+.tabla thead th { background:#f5f5f5; }
+.tabla col.id { width:8%; }
+.tabla col.nombre { width:40%; }
+.tabla col.precio { width:12%; }
+.tabla col.imagen { width:20%; }
+.tabla col.acciones { width:20%; }
+.actions-form { display:inline-block; margin-right: 28px; }
+.actions-form button { margin-right: 6px; }
+.textarea-full { width:100%; min-height:64px; }
+.message { padding:10px; margin:10px 0; border-radius:4px; }
+.message-success { background:#e6ffed; border:1px solid #b6f0c6; padding:8px; }
+.message-error { background:#fff2f2; border:1px solid #f0b6b6; padding:8px; }
